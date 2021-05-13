@@ -12,6 +12,9 @@ if(hoveringPlayer) exit;
 
 // Select a tile to remove and temporarily store it in a variable
 if(!global.player.movingTile) {
+	// Don't take a tile if there are no tile swaps remaining
+	if(global.player.remainingTileSwaps <= 0) exit;
+	
 	// Don't do anything if not hovering a tile
 	if(!hoveringTile) exit;
 
@@ -24,9 +27,13 @@ if(!global.player.movingTile) {
 	global.player.savedTile = tilemap_get_at_pixel(_mapId, hoveredTile.x * TILE_SIZE, hoveredTile.y * TILE_SIZE);
 	tilemap_set_at_pixel(_mapId, 0, hoveredTile.x * TILE_SIZE, hoveredTile.y * TILE_SIZE);
 	
+	// Update surrounding tiles
+	UpdateSurroundingTiles(hoveredTile);
+	
 	// Make radius circle on player
 	global.player.currentRadius = 0;
 	
+	global.player.remainingTileSwaps--;
 	_result = true;
 }
 
@@ -34,7 +41,6 @@ if(!global.player.movingTile) {
 if(global.player.movingTile) {
 	// If it's a filled tile do nothing
 	var _collisionTile = tilemap_get_at_pixel(_mapId, hoveredTile.x * TILE_SIZE, hoveredTile.y * TILE_SIZE);
-	show_debug_message(_collisionTile);
 	if(_collisionTile != 0) exit;
 	
 	// Place the collision
@@ -44,6 +50,9 @@ if(global.player.movingTile) {
 	_layId = layer_get_id("Main_Tileset");
 	_mapId = layer_tilemap_get_id(_layId);
 	tilemap_set_at_pixel(_mapId, Autotile(hoveredTile, "Collisions"), hoveredTile.x * TILE_SIZE, hoveredTile.y * TILE_SIZE);
+	
+	// Update surrounding tiles
+	UpdateSurroundingTiles(hoveredTile);
 	
 	global.player.movingTile = false;
 }

@@ -1,6 +1,7 @@
 /// @description draw tile cursor
 if(!instance_exists(global.player)) exit;
 
+// Draw tile placement cursor
 if(global.player.movingTile) {
 	// Check if mouse is within placement range
 	if(global.player.mouseDistance > global.player.radius) exit;
