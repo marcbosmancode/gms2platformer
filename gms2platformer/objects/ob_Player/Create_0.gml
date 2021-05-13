@@ -30,3 +30,11 @@ mouseDistance = 0;
 savedTile = -1;
 // If you are currently moving a tile
 movingTile = false;
+
+// Player animation sprites
+spriteIdle = spr_Player;
+spriteJump = spr_PlayerJump;
+
+spriteDirection = 1;
+
+AutotileMap();

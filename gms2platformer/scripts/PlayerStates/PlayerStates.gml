@@ -34,4 +34,12 @@ function pMovementState() {
 	// Check for collisions and move
 	if(!HorizontalCollision()) x += hSpeed;
 	if(!VerticalCollision()) y += vSpeed;
+	
+	// Player animating
+	if(_touchingGround) sprite_index = spriteIdle;
+	if(!_touchingGround) sprite_index = spriteJump; 
+	
+	if(leftKey) spriteDirection = -1;
+	if(rightKey) spriteDirection = 1;
+	
 }

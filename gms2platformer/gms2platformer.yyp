@@ -19,6 +19,7 @@
     {"id":{"name":"Vector","path":"scripts/Vector/Vector.yy",},"order":5,},
     {"id":{"name":"ob_Game","path":"objects/ob_Game/ob_Game.yy",},"order":0,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":2,},
+    {"id":{"name":"spr_PlayerJump","path":"sprites/spr_PlayerJump/spr_PlayerJump.yy",},"order":2,},
     {"id":{"name":"spr_TileCursor","path":"sprites/spr_TileCursor/spr_TileCursor.yy",},"order":1,},
     {"id":{"name":"ob_Player","path":"objects/ob_Player/ob_Player.yy",},"order":0,},
     {"id":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},"order":0,},
