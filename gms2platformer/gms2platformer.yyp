@@ -2,10 +2,12 @@
   "resources": [
     {"id":{"name":"spr_Player","path":"sprites/spr_Player/spr_Player.yy",},"order":0,},
     {"id":{"name":"ob_Cursor","path":"objects/ob_Cursor/ob_Cursor.yy",},"order":1,},
+    {"id":{"name":"fo_Pixelfont","path":"fonts/fo_Pixelfont/fo_Pixelfont.yy",},"order":0,},
     {"id":{"name":"spr_BasicTileSet","path":"sprites/spr_BasicTileSet/spr_BasicTileSet.yy",},"order":0,},
     {"id":{"name":"spr_CollisionTileSet","path":"sprites/spr_CollisionTileSet/spr_CollisionTileSet.yy",},"order":1,},
     {"id":{"name":"KeyInput","path":"scripts/KeyInput/KeyInput.yy",},"order":0,},
     {"id":{"name":"spr_Cursor","path":"sprites/spr_Cursor/spr_Cursor.yy",},"order":0,},
+    {"id":{"name":"spr_UISweat","path":"sprites/spr_UISweat/spr_UISweat.yy",},"order":2,},
     {"id":{"name":"bg_Sky","path":"sprites/bg_Sky/bg_Sky.yy",},"order":0,},
     {"id":{"name":"ob_Camera","path":"objects/ob_Camera/ob_Camera.yy",},"order":2,},
     {"id":{"name":"init","path":"scripts/init/init.yy",},"order":0,},
