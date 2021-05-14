@@ -1,2 +1,2 @@
 /// @description restart game
-game_restart();
+room_restart();
