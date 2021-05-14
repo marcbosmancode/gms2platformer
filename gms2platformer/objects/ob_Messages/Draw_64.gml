@@ -1,8 +1,8 @@
 /// @description draw message
 
 // Draw message in the middle of the screen
-draw_set_color(c_white);
 draw_set_font(fo_Pixelfont);
+draw_set_color(c_white);
 
 draw_set_alpha(messageAlpha);
 draw_set_halign(fa_center);

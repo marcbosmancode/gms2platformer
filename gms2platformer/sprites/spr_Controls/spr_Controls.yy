@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 2,
-  "bbox_right": 59,
-  "bbox_top": 8,
-  "bbox_bottom": 31,
+  "bbox_left": 16,
+  "bbox_right": 63,
+  "bbox_top": 0,
+  "bbox_bottom": 15,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f6671ed9-0d4d-4e88-8fa0-f6647e32bb45","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6671ed9-0d4d-4e88-8fa0-f6647e32bb45","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},"LayerId":{"name":"bf5d3584-bf28-4805-b0af-001d77634a33","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_Vegetation","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},"resourceVersion":"1.0","name":"f6671ed9-0d4d-4e88-8fa0-f6647e32bb45","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"245deb25-417e-4c6d-80b1-c2caef059e2b","path":"sprites/spr_Controls/spr_Controls.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"245deb25-417e-4c6d-80b1-c2caef059e2b","path":"sprites/spr_Controls/spr_Controls.yy",},"LayerId":{"name":"39a54ce2-c870-43c3-a30a-f703ba9ef2b5","path":"sprites/spr_Controls/spr_Controls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_Controls","path":"sprites/spr_Controls/spr_Controls.yy",},"resourceVersion":"1.0","name":"245deb25-417e-4c6d-80b1-c2caef059e2b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_Vegetation","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},
+    "spriteId": {"name":"spr_Controls","path":"sprites/spr_Controls/spr_Controls.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4578b4f7-d846-4273-bf2f-0bc044aa5355","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6671ed9-0d4d-4e88-8fa0-f6647e32bb45","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2bbb5d5c-a267-49ba-ac70-27b85d5a34de","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"245deb25-417e-4c6d-80b1-c2caef059e2b","path":"sprites/spr_Controls/spr_Controls.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_Vegetation","path":"sprites/spr_Vegetation/spr_Vegetation.yy",},
+    "parent": {"name":"spr_Controls","path":"sprites/spr_Controls/spr_Controls.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_Vegetation",
+    "name": "spr_Controls",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"bf5d3584-bf28-4805-b0af-001d77634a33","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"39a54ce2-c870-43c3-a30a-f703ba9ef2b5","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/TileSets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_Vegetation",
+  "name": "spr_Controls",
   "tags": [],
   "resourceType": "GMSprite",
 }
