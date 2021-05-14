@@ -21,6 +21,7 @@ global.collisionMap = layer_tilemap_get_id(layer_get_id("Collisions"));
 global.cursor = instance_create_layer(0, 0, "Instances", ob_Cursor);
 global.camera = instance_create_layer(0, 0, "Instances", ob_Camera);
 global.messages = instance_create_layer(0, 0, "Instances", ob_Messages);
+global.timer = instance_create_layer(0, 0, "Instances", ob_Timer);
 global.player = noone;
 
 #endregion

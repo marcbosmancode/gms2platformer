@@ -10,5 +10,6 @@ if(room != room_last) {
 } else {
 	ShowMessage("You cleared the game!\nPress R to restart the game");
 	global.player.clearedGame = true;
+	global.timer.timerRunning = false;
 	instance_destroy();
 }
