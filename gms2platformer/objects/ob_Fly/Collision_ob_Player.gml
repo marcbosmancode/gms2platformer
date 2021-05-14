@@ -8,6 +8,7 @@ if(instance_number(ob_Fly) > 1) {
 if(room != room_last) {
 	room_goto_next();
 } else {
-	show_message("You cleared the game!");
-	game_restart();
+	ShowMessage("You cleared the game!\nPress R to restart the game");
+	global.player.clearedGame = true;
+	instance_destroy();
 }

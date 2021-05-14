@@ -1,2 +1,7 @@
 /// @description restart game
-room_restart();
+
+if(clearedGame) {
+	game_restart();
+} else {
+	room_restart();
+}

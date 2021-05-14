@@ -39,3 +39,5 @@ spriteWalk = spr_PlayerWalk;
 spriteJump = spr_PlayerJump;
 
 spriteDirection = 1;
+
+clearedGame = false;
