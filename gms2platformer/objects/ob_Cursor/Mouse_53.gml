@@ -30,6 +30,11 @@ if(!global.player.movingTile) {
 	// Update surrounding tiles
 	UpdateSurroundingTiles(hoveredTile);
 	
+	// Remove vegetation on top
+	_layId = layer_get_id("Top_Tileset");
+	_mapId = layer_tilemap_get_id(_layId);
+	tilemap_set_at_pixel(_mapId, 0, hoveredTile.x * TILE_SIZE, hoveredTile.y * TILE_SIZE - TILE_SIZE);
+	
 	// Make radius circle on player
 	global.player.currentRadius = 0;
 	
@@ -53,6 +58,11 @@ if(global.player.movingTile) {
 	
 	// Update surrounding tiles
 	UpdateSurroundingTiles(hoveredTile);
+	
+	// Remove vegetation inside the placed block
+	_layId = layer_get_id("Top_Tileset");
+	_mapId = layer_tilemap_get_id(_layId);
+	tilemap_set_at_pixel(_mapId, 0, hoveredTile.x * TILE_SIZE, hoveredTile.y * TILE_SIZE);
 	
 	global.player.movingTile = false;
 }
